@@ -30,8 +30,10 @@ const Index = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" className="w-full">
-                <ArrowRight className="mr-2 h-4 w-4" /> Get Started
+              <Button variant="outline" className="w-full" asChild>
+                <Link to="/getting-started">
+                  <ArrowRight className="mr-2 h-4 w-4" /> Get Started
+                </Link>
               </Button>
             </CardFooter>
           </Card>
@@ -50,8 +52,10 @@ const Index = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" className="w-full">
-                <ArrowRight className="mr-2 h-4 w-4" /> Explore Components
+              <Button variant="outline" className="w-full" asChild>
+                <Link to="/components">
+                  <ArrowRight className="mr-2 h-4 w-4" /> Explore Components
+                </Link>
               </Button>
             </CardFooter>
           </Card>
@@ -70,16 +74,18 @@ const Index = () => {
               </p>
             </CardContent>
             <CardFooter>
-              <Button variant="outline" className="w-full">
-                <ArrowRight className="mr-2 h-4 w-4" /> Learn More
+              <Button variant="outline" className="w-full" asChild>
+                <Link to="/performance">
+                  <ArrowRight className="mr-2 h-4 w-4" /> Learn More
+                </Link>
               </Button>
             </CardFooter>
           </Card>
         </div>
 
         <div className="mt-16 text-center">
-          <Button size="lg" className="mr-4">
-            Start Building
+          <Button size="lg" className="mr-4" asChild>
+            <Link to="/getting-started">Start Building</Link>
           </Button>
           <Button variant="outline" size="lg" asChild>
             <Link to="/docs">Documentation</Link>
